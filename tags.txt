@@ -12,6 +12,7 @@ complex/alpha
 complex/witness
 complex/cover-mapper
 complex/tangential
+complex/grid
 
 custom/filtration
 custom/distance
