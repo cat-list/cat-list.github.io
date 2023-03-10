@@ -8,6 +8,7 @@ tags:
  - complex/simplicial
  - complex/alpha
  - complex/rips
+ - complex/rips-weighted
  - complex/witness
  - complex/cover-mapper
  - complex/tangential
