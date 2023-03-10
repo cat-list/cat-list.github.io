@@ -7,7 +7,7 @@
     "build-index": "bundler exec jekyll build && cat _site/json/software.json | node scripts/build-index.js > json/index.json && bundler exec jekyll build"
   },
   "author": "",
-  "license": "MIT",
+  "license": "",
   "dependencies": {
     "lunr": "^2.3.9"
   }
