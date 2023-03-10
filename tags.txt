@@ -1,4 +1,4 @@
-Flang/c++
+lang/c++
 lang/python
 lang/cli
 
