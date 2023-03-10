@@ -6,15 +6,19 @@ type/persistence
 type/parallel
 type/discrete-morse-theory
 type/representative
+type/images
 
 complex/cubical
 complex/simplicial
 complex/rips
+complex/rips-weighted
+complex/cech
 complex/alpha
 complex/witness
 complex/cover-mapper
 complex/tangential
 complex/grid
+complex/flag
 
 custom/filtration
 custom/distance
@@ -28,6 +32,11 @@ repr/image
 repr/silhouette
 repr/kernel
 
+feat/amplitude
+feat/entropy
+feat/polynomial
+
 vis/barcode
 vis/diagram
 vis/density
+vis/betti-surface
