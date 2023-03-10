@@ -7,8 +7,12 @@ layout: default
 </form>
 <div id="table">
 {% for software in site.software %}
-    <p id="{{software.title | xml_escape }}">
+    <p id="{{software.id | xml_escape }}">
         <a href="{{ software.url }}">{{ software.name }}</a>
+        ::
+        {% for tag in software.tags %}
+            <span>#{{ tag  }}</span>
+        {% endfor %}
     </p>
 {% endfor %}
 </div>

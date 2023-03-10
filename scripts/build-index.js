@@ -14,9 +14,10 @@ stdin.on('end', function () {
   var documents = JSON.parse(buffer.join(''));
 
   var idx = lunr(function () {
-    this.ref('title');
+    this.ref('id');
     this.field('name');
     this.field('content');
+    this.field('tags');
 
     documents.forEach(function (doc) {
       this.add(doc);
