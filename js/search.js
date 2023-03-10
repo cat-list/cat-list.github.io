@@ -1,9 +1,10 @@
-var INDEX_URL = '/json/index.json';
+var INDEX_URL = '/json/software.json';
 
 function buildQuery(search_term) {
   query = [];
   terms = search_term.split(' ');
   terms.forEach((term) => {
+    var term = term.trim();
     if (term.includes(':')) {
       query.push(term);
     } else {
@@ -13,10 +14,12 @@ function buildQuery(search_term) {
       query.push('*' + search_term + '*');
     }
   });
+  console.log(query);
   return query.join(' ');
 }
 
 function runSearch(idx, shadow, search_term) {
+  console.log(idx);
   var query = buildQuery(search_term);
   var refs = idx.search(query).map((res) => res.ref);
   var table = document.getElementById('table');
@@ -32,18 +35,25 @@ function attachSearchCallback(idx, shadow) {
     var search_term = e.target.value;
     runSearch(idx, shadow, search_term);
     var query_uri = encodeURIComponent(search_term);
-    window.history.replaceState(
-      { query: query_uri },
-      '',
-      '/?query=' + query_uri
-    );
+    var query_string = query_uri.length == 0 ? '/' : '/?query=' + query_uri;
+    window.history.replaceState({ query: query_uri }, '', query_string);
   };
 }
 
 function get_index() {
   return fetch(INDEX_URL)
     .then((res) => res.json())
-    .then((data) => lunr.Index.load(data));
+    .then((data) => {
+      return lunr(function () {
+        this.ref('id');
+        this.field('name');
+        this.field('content');
+        this.field('tags');
+        data.forEach(function (doc) {
+          this.add(doc);
+        }, this);
+      });
+    });
 }
 
 function buildShadow() {
@@ -69,7 +79,6 @@ function main() {
   let idx_promise = get_index();
   let shadow = buildShadow();
   idx_promise.then((idx) => {
-    console.log(idx);
     runUrlQuery(idx, shadow);
     attachSearchCallback(idx, shadow);
     document.getElementById('search-box').focus();
