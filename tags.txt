@@ -1,6 +1,7 @@
 lang/c++
 lang/python
 lang/cli
+lang/rust
 
 type/persistence
 type/parallel
