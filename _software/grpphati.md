@@ -1,5 +1,5 @@
 ---
-name: grphati
+name: grpphati
 tags:
   - lang/python
   - type/persistence
