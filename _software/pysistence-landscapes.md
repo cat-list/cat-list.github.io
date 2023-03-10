@@ -1,8 +1,8 @@
 ---
-name: pysistence-landscapes
+name: "pysistence-landscapes"
 tags:
-	- lang/python
-	- repr/landscape
+    - lang/python
+    - repr/landscape
 ---
 
 # Pysistence Landscapes
