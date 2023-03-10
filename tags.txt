@@ -2,6 +2,7 @@ lang/c++
 lang/python
 lang/cli
 lang/rust
+lang/julia
 
 type/persistence
 type/parallel
