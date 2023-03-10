@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<form action="/index.html" method="get">
+  <label for="search-box">Search</label>
+  <input type="text" id="search-box" name="query">
+</form>
+<div id="table">
+{% for software in site.software %}
+    <p id="{{software.title | xml_escape }}">
+        <a href="{{ software.url }}">{{ software.name }}</a>
+    </p>
+{% endfor %}
+</div>
+
+<script src="/js/search.js"></script>

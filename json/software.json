@@ -1,0 +1,12 @@
+---
+layout: none
+---
+[
+{% for software in site.software %}
+    {
+        "title": "{{ software.title | xml_escape }}",
+        "name": "{{ software.name | xml_escape }}",
+        "url": "{{ software.url | xml_escape }}",
+        "content": {{ software.content | jsonify }}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+]

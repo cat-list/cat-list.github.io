@@ -1,0 +1,14 @@
+{
+  "name": "phasr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-index": "bundler exec jekyll build && cat _site/json/software.json | node scripts/build-index.js > json/index.json && bundler exec jekyll build"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "lunr": "^2.3.9"
+  }
+}
