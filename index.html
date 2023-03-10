@@ -10,7 +10,9 @@ layout: default
     <p id="{{software.id | xml_escape }}">
         <a href="{{ software.url }}">{{ software.name }}</a>
         ::
-        {% for tag in software.tags %}
+
+        {% assign tag_list = software.tags | sort %}
+        {% for tag in tag_list %}
             <span>#{{ tag  }}</span>
         {% endfor %}
     </p>
