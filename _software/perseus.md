@@ -1,14 +1,15 @@
 ---
 name: perseus
 tags:
-  - c++
-  - cli
-  - discrete-morse-theory
-  - cubical-complex
-  - simplicial-complex
-  - rips-complex
-  - custom-filtration
-  - custom-metric
+  - lang/c++
+  - lang/cli
+  - type/persistence
+  - type/discrete-morse-theory
+  - complex/cubical
+  - complex/simplicial
+  - complex/rips
+  - custom/filtration
+  - custom/distance
 ---
 
 # Perseus
