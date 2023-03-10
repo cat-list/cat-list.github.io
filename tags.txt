@@ -3,7 +3,9 @@ lang/python
 lang/cli
 
 type/persistence
+type/parallel
 type/discrete-morse-theory
+type/representative
 
 complex/cubical
 complex/simplicial
