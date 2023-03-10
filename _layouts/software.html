@@ -1,5 +1,10 @@
 ---
 layout: default
 ---
-<h1>{{ page.name }}</h1>
 {{ page.content | markdownify }}
+<p>
+{% assign tag_list = page.tags | sort %}
+{% for tag in tag_list %}
+<span>#{{ tag  }}</span>
+{% endfor %}
+</p>
