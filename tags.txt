@@ -18,6 +18,7 @@ complex/grid
 
 custom/filtration
 custom/distance
+custom/boundary-matrix
 
 dist/bottleneck
 dist/wasserstein
