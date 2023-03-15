@@ -17,5 +17,3 @@ links:
   - name: Docs
     url: https://persim.scikit-tda.org/en/latest/reference/index.html
 ---
-
-[link]()  
