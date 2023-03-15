@@ -130,6 +130,11 @@ body {
     background-color: $background;
 }
 
+.pin_max_width {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
 hr {
     height: 2px;
     background-color: black;
