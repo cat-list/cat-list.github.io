@@ -162,6 +162,7 @@ a.nodec {
     text-decoration: none;
 }
 
+
 p.pill_bar {
     line-height: 40px;
     &.small_text {
@@ -179,11 +180,16 @@ blockquote {
     margin: 10px 10px;
 }
 
-ul {
+ul,ol {
+    margin-top: 10px;
     list-style-position: inside;
 }
 
 p.no_content {
     text-align: center;
     padding: 30px 10px;
+}
+
+.content p:not(:first-child){
+    margin-top: 20px;
 }
