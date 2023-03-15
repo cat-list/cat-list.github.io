@@ -29,17 +29,24 @@ links:
   - name: Docs
     url: https://giotto-ai.github.io/gtda-docs/0.5.1/library.html
 ---
+Giotto-TDA is a well-tested suite of computational topology tools, compatible with the `scikit-learn` API and framework.
 From the docs:
 > giotto-tda is a high performance topological machine learning toolbox in Python built on top of scikit-learn and is distributed under the GNU AGPLv3 license.
 > It is part of the Giotto family of open-source projects.
 
-Giotto-TDA is a well-tested suite of computational topology tools, compatible with the `scikit-learn` API and framework.
-Supported data types include
+Supported data types include:
 * point clouds,
 * tabular data,
 * time series data
-* (directed) graphs, and
+* (directed) graphs,
 * images.
+
+Supported filtrations include:
+* (weighted/sparse) Vietoris-Rips,
+* weak alpha filtration,
+* euclidean Čech filtration, 
+* filtered cubical complexes,
+* (un)directed flag complex filtrations.
 
 Persistence diagrams can also be converted into other representations including persistence landscapes, persistence images and Betti curves.
 In line with the `scikit-learn` framework, preprocessing, persistent homology and diagram representations can be combined into a single pipeline.
