@@ -1,5 +1,6 @@
 ---
 name: lophat
+title: LoPHAT
 tags:
   - lang/rust
   - lang/python
@@ -8,7 +9,5 @@ tags:
   - custom/boundary-matrix
   - custom/filtration
 ---
-
-# LoPHAT
 
 [link](https://github.com/tomchaplin/lophat)

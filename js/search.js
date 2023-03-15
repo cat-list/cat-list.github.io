@@ -14,15 +14,13 @@ function buildQuery(search_term) {
       query.push('*' + search_term + '*');
     }
   });
-  console.log(query);
   return query.join(' ');
 }
 
 function runSearch(idx, shadow, search_term) {
-  console.log(idx);
   var query = buildQuery(search_term);
   var refs = idx.search(query).map((res) => res.ref);
-  var table = document.getElementById('table');
+  var table = document.getElementById('table_body');
   table.innerHTML = '';
   refs.forEach((ref) => {
     var new_node = shadow.find((node) => node.id == ref).cloneNode(true);
@@ -57,7 +55,7 @@ function get_index() {
 }
 
 function buildShadow() {
-  var table = document.getElementById('table');
+  var table = document.getElementById('table_body');
   var shadow = [];
   for (i = 0; i < table.children.length; i++) {
     shadow.push(table.children.item(i).cloneNode(true));

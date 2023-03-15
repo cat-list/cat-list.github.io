@@ -1,5 +1,6 @@
 ---
 name: giotto-tda
+title: Giotto-TDA
 tags:
   - lang/python
   - type/persistence
@@ -23,6 +24,4 @@ tags:
   - vis/diagram
   - vis/betti-surface
 ---
-# Giotto-tda
-
 [link](https://github.com/giotto-ai/giotto-tda)

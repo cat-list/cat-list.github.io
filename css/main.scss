@@ -1,0 +1,144 @@
+---
+---
+
+$background: #FEF7FA;
+$accent: #550d2b;
+$hover: rgba(33, 5, 17, 0.2);
+$first-split: 400px;
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+form {
+    width: 100%;
+    padding: 10px 0;
+}
+
+input[type="text"] {
+    outline: none;
+    border: 0px solid;
+    border-bottom: 2px solid black;
+    transition: border-bottom 0.2s;
+    margin: 0 auto;
+    display: block;
+    font-size: 1.4em;
+    width: 90%;
+    max-width: 500px;
+    background-color: $background;
+    text-align: center;
+
+    &:focus {
+        outline: none;
+        border-bottom: 2px solid $accent;
+    }
+}
+
+h1 { 
+    font-size: 2.2em; 
+
+    &.main_head {
+        margin: 10px 0;
+        text-align: center;
+    }
+} 
+     
+h2 { 
+    font-size: 2.0em;     
+} 
+     
+h3 { 
+    font-size: 1.8em; 
+} 
+     
+h4 { 
+    font-size: 1.6em;     
+} 
+     
+h5 { 
+    font-size: 1.4em;     
+} 
+     
+p { 
+    font-size: 1.2em;     
+}
+
+a {
+    color: $accent;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    width: 100%;
+
+    th {
+        text-align: left;
+        padding: 5px 7px;
+    }
+
+    thead {
+        border-bottom: 2px solid black;
+        font-size: 1.2em
+    }
+
+    td {
+        padding: 5px 7px;
+    }
+
+    td.software_tags {
+        line-height: 28px;
+    }
+
+    tbody {
+        tr:hover {
+            background-color: $hover;
+        }
+    }
+
+    @media only screen and (max-width: $first-split) {
+        th {
+            text-align: left;
+            display: block;
+            width: 100%;
+        }
+
+        td {
+            display: block;
+        }
+
+        td.software_name {
+            padding-bottom: 1px;
+        }
+
+        td.software_tags {
+            padding-top: 1px;
+        }
+
+        tr {
+            margin: 5px 0;
+            display: block;
+        }
+    }
+}
+
+body {
+    margin: 0 5px;
+    background-color: $background;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+    margin: 10px 0px;
+}
+
+span.pill {
+    background-color: $hover;
+    padding: 3px 7px;
+    border-radius: 10px;
+    white-space: nowrap;
+}

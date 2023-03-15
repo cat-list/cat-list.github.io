@@ -1,5 +1,6 @@
 ---
 name: perseus
+title: Perseus
 tags:
   - lang/c++
   - lang/cli
@@ -11,7 +12,5 @@ tags:
   - custom/filtration
   - custom/distance
 ---
-
-# Perseus
 
 [link](https://people.maths.ox.ac.uk/nanda/perseus/index.html)

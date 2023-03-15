@@ -1,5 +1,6 @@
 ---
 name: eirene
+title: Eirene
 tags:
   - lang/julia
   - type/persistence
@@ -12,7 +13,5 @@ tags:
   - vis/diagram
   - dist/wasserstein
 ---
-
-# Eirene
 
 [link](http://gregoryhenselman.org/eirene/index.html)

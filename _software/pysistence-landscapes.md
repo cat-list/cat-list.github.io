@@ -1,10 +1,9 @@
 ---
 name: "pysistence-landscapes"
+title: Pysistence Langscapes
 tags:
  - lang/python
  - repr/landscape
 ---
-
-# Pysistence Landscapes
 
 [link](https://gitlab.com/kfbenjamin/pysistence-landscapes)

@@ -1,5 +1,6 @@
 ---
 name: ripser
+title: ripser
 tags:
   - lang/c++
   - lang/python
@@ -8,8 +9,6 @@ tags:
   - complex/rips
   - custom/distance
 ---
-
-# Ripser
 
 [c++](https://github.com/Ripser/ripser)
 [python](https://ripser.scikit-tda.org/en/latest/)

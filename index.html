@@ -1,22 +1,29 @@
 ---
 layout: default
+title: Search
 ---
+<h1 class="main_head">The CAT List</h1>
 <form action="/index.html" method="get">
-  <label for="search-box">Search</label>
-  <input type="text" id="search-box" name="query">
+  <input type="text" id="search-box" name="query" placeholder="Search">
 </form>
-<div id="table">
+<table >
+    <thead>
+        <th>Software</th>
+        <th>Tags</th>
+    </thead>
+    <tbody id="table_body">
 {% for software in site.software %}
-    <p id="{{software.id | xml_escape }}">
-        <a href="{{ software.url }}">{{ software.name }}</a>
-        ::
-
+    <tr id="{{software.id | xml_escape }}">
+        <td class="software_name"><a href="{{ software.url }}">{{ software.name }}</a></td>
+        <td class="software_tags">
         {% assign tag_list = software.tags | sort %}
         {% for tag in tag_list %}
-            <span>#{{ tag  }}</span>
+            <span class="pill">#{{ tag  }}</span>
         {% endfor %}
-    </p>
+        </td>
+    </tr>
 {% endfor %}
+    </tbody>
 </div>
 
 <script src="/js/search.js"></script>

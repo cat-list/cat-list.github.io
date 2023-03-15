@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
+<h1 class="main_head">{{ page.title | xml_escape }}</h1>
 {{ page.content | markdownify }}
 <p>
+<hr>
 {% assign tag_list = page.tags | sort %}
 {% for tag in tag_list %}
 <span>#{{ tag  }}</span>

@@ -1,5 +1,6 @@
 ---
 name: oineus
+title: Oineus
 tags:
   - lang/c++
   - lang/python
@@ -10,7 +11,5 @@ tags:
   - complex/simplicial
   - complex/rips
 ---
-
-# Oineus
 
 [link](https://github.com/anigmetov/oineus)

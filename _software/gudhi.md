@@ -1,5 +1,6 @@
 ---
 name: gudhi
+title: Gudhi
 tags: 
  - lang/c++
  - lang/python
@@ -24,7 +25,5 @@ tags:
  - custom/distance
  - custom/filtration
 ---
-
-# Gudhi
 
 [link](https://gudhi.inria.fr/)

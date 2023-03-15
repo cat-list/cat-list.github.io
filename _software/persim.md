@@ -1,5 +1,6 @@
 ---
 name: persim
+title: Persim
 tags:
   - lang/python
   - repr/image
@@ -9,7 +10,5 @@ tags:
   - vis/diagram
   - feat/entropy
 ---
-
-# Persim
 
 [link](https://github.com/scikit-tda/persim)  

@@ -1,5 +1,6 @@
 ---
 name: phat
+title: PHAT
 tags:
   - lang/c++
   - lang/cli
@@ -8,7 +9,5 @@ tags:
   - custom/boundary-matrix
   - custom/filtration
 ---
-
-# PHAT
 
 [link](https://bitbucket.org/phat-code/phat/src/master/)
