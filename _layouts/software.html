@@ -1,21 +1,31 @@
 ---
 layout: default
 ---
-<p class="back_link">
-<a href="/" class="nodec"><span class="pill">&larr; Back</span></a>
+<p class="pill_bar">
+<a href="/" class="nodec"><span class="large_pill">&larr; Back</span></a>
 </p>
 <h1 class="main_head">{{ page.title | xml_escape }}</h1>
-<p class="linkbar">
+<p class="link_bar pill_bar">
 {% for link in page.links %}
-    <a class="nodec" href={{ link.url }}><span class="pill">{{ link.name | xml_escape }}</span></a>
+    <a class="nodec" href={{ link.url }}><span class="large_pill">{{ link.name | xml_escape }}</span></a>
 {% endfor %}
 </p>
-
-{{ page.content | markdownify }}
-<p>
 <hr>
-{% assign tag_list = page.tags | sort %}
-{% for tag in tag_list %}
-<span>#{{ tag  }}</span>
-{% endfor %}
+<div class="content">
+{{ page.content | markdownify }}
+{% assign stripped_content = page.content | strip_newlines %}
+{% if stripped_content == "" %}
+<p class="no_content">
+<span style="font-size: 1.6em">Sorry!</span><br><br>
+We don't have a description for this software yet.<br><br>
+If you would like to add a description, please make a pull request on <a href="https://github.com/cat-list/cat-list.github.io/">our Github</a>.
+</p>
+{% endif %}
+</div>
+<hr>
+<p class="pill_bar small_text">
+    {% assign tag_list = page.tags | sort %}
+    {% for tag in tag_list %}
+    <span class="pill">#{{ tag  }}</span>
+    {% endfor %}
 </p>

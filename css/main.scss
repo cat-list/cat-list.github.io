@@ -68,10 +68,6 @@ h5 {
     font-size: 1.4em;     
 } 
      
-p { 
-    font-size: 1.2em;     
-}
-
 a {
     color: $accent;
 }
@@ -154,20 +150,40 @@ span.pill {
     white-space: nowrap;
 }
 
-p span.pill{
+span.large_pill{
+    background-color: $hover;
     padding: 5px 12px;
     border-radius: 20px;
+    white-space: nowrap;
+    font-size: 1.2em;
 }
 
 a.nodec {
     text-decoration: none;
 }
 
-p.back_link {
-    margin-top: 10px;
+p.pill_bar {
+    line-height: 40px;
+    &.small_text {
+        line-height: 28px;
+    }
 }
 
-p.linkbar {
+p.link_bar {
     text-align: right;
-    line-height: 40px;
+}
+
+blockquote {
+    border-left: 2px solid $weak-color;
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+p.no_content {
+    text-align: center;
+    padding: 30px 10px;
 }
