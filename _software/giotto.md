@@ -23,5 +23,9 @@ tags:
   - dist/wasserstein
   - vis/diagram
   - vis/betti-surface
+links:
+  - name: Repository
+    url: https://github.com/Eetion/Eirene.jl
+  - name: Docs
+    url: https://giotto-ai.github.io/gtda-docs/0.5.1/library.html
 ---
-[link](https://github.com/giotto-ai/giotto-tda)

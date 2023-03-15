@@ -4,6 +4,7 @@
 $background: #FEF7FA;
 $accent: #550d2b;
 $hover: rgba(33, 5, 17, 0.2);
+$weak-color: rgba(33, 5, 17, 0.5);
 $first-split: 400px;
 
 * { 
@@ -43,6 +44,11 @@ h1 {
     &.main_head {
         margin: 10px 0;
         text-align: center;
+    }
+
+    span.small {
+        font-size: 0.7em;
+        color: $weak-color;
     }
 } 
      
@@ -146,4 +152,21 @@ span.pill {
     padding: 3px 7px;
     border-radius: 10px;
     white-space: nowrap;
+}
+
+p span.pill{
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+a.nodec {
+    text-decoration: none;
+}
+
+p.back_link {
+    margin-top: 10px;
+}
+
+p.linkbar {
+    text-align: right;
 }

@@ -5,6 +5,7 @@ tags:
   - lang/c++
   - lang/cli
   - repr/landscape
+links:
+  - name: Homepage
+    url: https://www2.math.upenn.edu/~dlotko/persistenceLandscape.html
 ---
-
-[link](https://www2.math.upenn.edu/~dlotko/persistenceLandscape.html)

@@ -10,6 +10,7 @@ tags:
   - complex/grid
   - complex/simplicial
   - complex/rips
+links:
+  - name: Repository
+    url: https://github.com/anigmetov/oineus
 ---
-
-[link](https://github.com/anigmetov/oineus)

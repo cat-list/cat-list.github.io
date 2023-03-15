@@ -12,6 +12,9 @@ tags:
   - vis/barcode
   - vis/diagram
   - dist/wasserstein
+links:
+  - name: Homepage
+    url: http://gregoryhenselman.org/eirene/index.html
+  - name: Repository
+    url: https://github.com/Eetion/Eirene.jl
 ---
-
-[link](http://gregoryhenselman.org/eirene/index.html)

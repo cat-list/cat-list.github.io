@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
+<p class="back_link">
+<a href="/" class="nodec"><span class="pill">&larr; Back</span></a>
+</p>
 <h1 class="main_head">{{ page.title | xml_escape }}</h1>
+<p class="linkbar">
+{% for link in page.links %}
+    <a class="nodec" href={{ link.url }}><span class="pill">{{ link.name | xml_escape }}</span></a>
+{% endfor %}
+</p>
+
 {{ page.content | markdownify }}
 <p>
 <hr>

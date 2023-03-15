@@ -1,6 +1,6 @@
 ---
 name: ripser
-title: ripser
+title: Ripser
 tags:
   - lang/c++
   - lang/python
@@ -8,7 +8,9 @@ tags:
   - type/representative
   - complex/rips
   - custom/distance
+links:
+  - name: Repository
+    url: https://github.com/Ripser/ripser
 ---
 
-[c++](https://github.com/Ripser/ripser)
-[python](https://ripser.scikit-tda.org/en/latest/)
+See [Ripser.py](/software/ripser-py.html) for Python bindings.

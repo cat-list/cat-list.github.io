@@ -8,6 +8,9 @@ tags:
   - type/parallel
   - custom/boundary-matrix
   - custom/filtration
+links:
+  - name: Repository
+    url: https://github.com/tomchaplin/lophat
+  - name: Rust Docs
+    url: https://docs.rs/lophat/latest/lophat/
 ---
-
-[link](https://github.com/tomchaplin/lophat)
