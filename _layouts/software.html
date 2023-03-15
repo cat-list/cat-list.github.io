@@ -2,7 +2,7 @@
 layout: default
 ---
 <p class="pill_bar">
-<a href="/" class="nodec"><span class="large_pill">&larr; Back</span></a>
+    <a href="/" class="nodec"><span class="large_pill">&larr; Back</span></a>
 </p>
 <h1 class="main_head">{{ page.title | xml_escape }}</h1>
 <p class="link_bar pill_bar">
@@ -12,15 +12,15 @@ layout: default
 </p>
 <hr>
 <div class="content">
-{{ page.content | markdownify }}
-{% assign stripped_content = page.content | strip_newlines %}
-{% if stripped_content == "" %}
-<p class="no_content">
-<span style="font-size: 1.6em">Sorry!</span><br><br>
-We don't have a description for this software yet.<br><br>
-If you would like to add a description, please make a pull request on <a href="https://github.com/cat-list/cat-list.github.io/">our Github</a>.
-</p>
-{% endif %}
+    {{ page.content | markdownify }}
+    {% assign stripped_content = page.content | strip_newlines %}
+    {% if stripped_content == "" %}
+    <p class="no_content">
+        <span style="font-size: 1.6em">Sorry!</span><br><br>
+        We don't have a description for this software yet.<br><br>
+        If you would like to add a description, please make a pull request on <a href="https://github.com/cat-list/cat-list.github.io/">our Github</a>.
+    </p>
+    {% endif %}
 </div>
 <hr>
 <p class="pill_bar small_text">
