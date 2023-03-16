@@ -32,8 +32,7 @@ title: Search
         {% assign tag_list = software.tags | sort %}
         {% for tag in tag_list %}
             {%- assign tag_main = tag | split:"/" | first -%}
-            <span class="TAG_{{ tag_main}} pill"
-                  onclick="javascript:addTag('{{ tag }}')">{{ tag  }}</span>
+            <span class="TAG_{{ tag_main}} pill">{{ tag }} <button onclick="addTag('{{ tag }}')" class="add-button">➕</button></span>
         {% endfor %}
         </td>
     </tr>

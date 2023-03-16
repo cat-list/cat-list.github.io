@@ -17,7 +17,10 @@ const UPDATE = (function () {
       filter_tags: STATE.filter_tags,
     };
     const usp = new URLSearchParams(history_state);
-    const query_string = '/?' + usp.toString();
+    var query_string = '/?' + usp.toString();
+    if (STATE.query.length == 0 && STATE.filter_tags.length == 0) {
+      query_string = '/';
+    }
     window.history.replaceState(history_state, '', query_string);
   }
 
@@ -36,10 +39,12 @@ const UPDATE = (function () {
         let main_tag = f_tag.split('/')[0];
         elem.classList.add('TAG_' + main_tag);
         elem.classList.add('pill');
-        let delete_elem = document.createElement('span');
-        delete_elem.innerHTML = '🗑️';
-        delete_elem.classList.remove('delete_button');
-        delete_elem.onclick = (e) => {
+        let delete_elem = document.createElement('button');
+        delete_elem.innerHTML = '➖';
+        delete_elem.classList.add('pill_button');
+        elem.innerHTML = f_tag + ' ';
+        elem.appendChild(delete_elem);
+        elem.onclick = (e) => {
           console.log(STATE.filter_tags);
           const index = STATE.filter_tags.indexOf(f_tag);
           console.log(index);
@@ -48,8 +53,6 @@ const UPDATE = (function () {
             UPDATE();
           }
         };
-        elem.innerHTML = f_tag + ' ';
-        elem.appendChild(delete_elem);
         filter_tags.appendChild(elem);
       });
       filter_tags.classList.remove('hidden');
@@ -88,8 +91,8 @@ const UPDATE = (function () {
   };
 })();
 
-function addTag(tag_name) {
-  STATE.filter_tags.push(tag_name);
+function addTag(new_tag) {
+  STATE.filter_tags.push(new_tag);
   UPDATE();
 }
 
@@ -181,4 +184,6 @@ function SETUP() {
   ]);
 }
 
-SETUP().then(UPDATE);
+window.onload = function () {
+  SETUP().then(UPDATE);
+};

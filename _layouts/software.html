@@ -27,6 +27,8 @@ layout: default
     {% assign tag_list = page.tags | sort %}
     {% for tag in tag_list %}
         {%- assign tag_main = tag | split:"/" | first -%}
-        <span class="TAG_{{ tag_main }} pill">{{ tag  }}</span>
-    {% endfor %}
+        <span class="TAG_{{ tag_main }} pill"><a href="/?filter_tags={{ tag }}">{{ tag }}</a></span>
+        <!-- This is here to allow wrapping points -->
+        <span></span>
+    {%- endfor -%}
 </p>

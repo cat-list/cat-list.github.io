@@ -169,6 +169,12 @@ span.pill {
     padding: 3px 7px;
     border-radius: 10px;
     white-space: nowrap;
+    margin: 0 2px;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
 
     &.TAG_complex {
         background-color: blanchedalmond;
@@ -201,15 +207,25 @@ span.pill {
     &.TAG_repr {
         background-color: coral;
     }
+
+    button{
+        font-size: 0.8em;
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        outline: inherit;
+    }
 }
 
 span.large_pill{
     background-color: $hover;
     padding: 5px 12px;
     border-radius: 20px;
-    white-space: nowrap;
     font-size: 1.2em;
 }
+
 
 a.nodec {
     text-decoration: none;
