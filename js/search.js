@@ -44,7 +44,7 @@ const UPDATE = (function () {
         delete_elem.classList.add('pill_button');
         elem.innerHTML = f_tag + ' ';
         elem.appendChild(delete_elem);
-        elem.onclick = (e1) => {
+        delete_elem.onclick = (e1) => {
           const index = STATE.filter_tags.indexOf(f_tag);
           if (index > -1) {
             STATE.filter_tags.splice(f_tag, 1);
