@@ -1,10 +1,12 @@
 ---
 ---
 
-$background: #FEF7FA;
+$background: #F2F0F2;
 $accent: black;
-$hover: rgba(33, 5, 17, 0.2);
-$weak-color: rgba(33, 5, 17, 0.5);
+$hover: rgba(0, 0, 0, 0.1);
+$weak-color: rgba(0, 0, 0, 0.2);
+$hint-color: rgba(0, 0, 0, 0.5);
+$mid-color: rgba(0, 0, 0, 1);
 $first-split: 400px;
 
 * { 
@@ -27,7 +29,10 @@ form {
     p {
         white-space: pre-wrap;
         &.hint {
-            color: $weak-color;
+            color: $hint-color;
+            @media only screen and (max-width: $first-split) {
+                font-size: 0.9em;;
+            }
         }
     }
 }
@@ -42,9 +47,12 @@ input[type="text"] {
     width: 90%;
     max-width: 400px;
     background-color: $hover;
-    padding: 7px 20px;
+    padding: 9px 20px 7px 20px;
     text-align: left;
     border-radius: 20px;
+    @media only screen and (max-width: $first-split) {
+        font-size: 1em;
+    }
 
     &:focus {
         outline: none;
@@ -56,7 +64,7 @@ input[type="text"] {
     display: flex;
     justify-content: center;
     height: 100px;
-    margin: 10px 0;
+    margin: 20px 0 10px 0;
 
     img {
         height: 100%;
@@ -73,7 +81,11 @@ h1 {
 
     span.small {
         font-size: 0.7em;
-        color: $weak-color;
+        color: $mid-color;
+    }
+
+    @media only screen and (max-width: $first-split) {
+        font-size: 2em;
     }
 } 
      
@@ -113,8 +125,9 @@ table {
     }
 
     td {
-        padding: 5px 7px;
+        padding: 10px 7px;
     }
+
 
     td.software_tags {
         line-height: 28px;
@@ -129,7 +142,7 @@ table {
     @media only screen and (max-width: $first-split) {
         th {
             text-align: left;
-            display: block;
+            display: none;
             width: 100%;
         }
 
@@ -138,7 +151,7 @@ table {
         }
 
         td.software_name {
-            padding-bottom: 1px;
+            padding: 10px;
         }
 
         td.software_tags {
@@ -174,6 +187,10 @@ span.pill {
     border-radius: 10px;
     margin: 0 2px;
     white-space: nowrap;
+    //box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    @media only screen and (max-width: $first-split) {
+        font-size: 0.8em;
+    }
 
     a {
         color: inherit;
@@ -181,35 +198,35 @@ span.pill {
     }
 
     &.TAG_complex {
-        background-color: blanchedalmond;
+        background-color: #b5ead6;
     }
 
     &.TAG_custom {
-        background-color: gainsboro;
+        background-color: #55cbcd;
     }
 
     &.TAG_dist {
-        background-color: dodgerblue;
+        background-color: white;
     }
 
     &.TAG_lang {
-        background-color: goldenrod;
+        background-color: #fdcf76;
     }
 
     &.TAG_type {
-        background-color: deeppink;
+        background-color: #ffaea5;
     }
 
     &.TAG_vis {
-        background-color: chocolate;
+        background-color: #e8dff5;
     }
 
     &.TAG_feat {
-        background-color: aquamarine;
+        background-color: #ffc8a2;
     }
 
     &.TAG_repr {
-        background-color: coral;
+        background-color: #c7dbda;
     }
 
     button{
@@ -230,6 +247,9 @@ span.large_pill{
     padding: 5px 12px;
     border-radius: 20px;
     font-size: 1.2em;
+    @media only screen and (max-width: $first-split) {
+        font-size: 1em;
+    }
 }
 
 
