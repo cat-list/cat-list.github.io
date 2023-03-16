@@ -38,6 +38,17 @@ input[type="text"] {
     }
 }
 
+.img_holder {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin: 10px 0;
+
+    img {
+        height: 100%;
+    }
+}
+
 h1 { 
     font-size: 2.2em; 
 
