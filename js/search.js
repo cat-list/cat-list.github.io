@@ -34,7 +34,7 @@ const UPDATE = (function () {
     } else {
       search_hint.classList.add('hidden');
       filter_tags.innerHTML = '';
-      STATE.filter_tags.forEach(function (f_tag) {
+      STATE.filter_tags.forEach((f_tag) => {
         let elem = document.createElement('span');
         let main_tag = f_tag.split('/')[0];
         elem.classList.add('TAG_' + main_tag);
@@ -47,7 +47,7 @@ const UPDATE = (function () {
         delete_elem.onclick = (e1) => {
           const index = STATE.filter_tags.indexOf(f_tag);
           if (index > -1) {
-            STATE.filter_tags.splice(f_tag, 1);
+            STATE.filter_tags.splice(index, 1);
             UPDATE();
           }
         };
