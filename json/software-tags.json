@@ -1,0 +1,11 @@
+---
+layout: none
+---
+{%- assign tags_array = "" | split:"|" -%}
+{%- for post in site.software -%}
+    {%- for tag in post.tags -%}
+        {%- assign tags_array = tags_array | push: tag | uniq -%}
+    {%- endfor -%}
+{%- endfor -%}
+{%- assign tags_array = tags_array | sort -%}
+{{ tags_array | jsonify }}
