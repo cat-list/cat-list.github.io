@@ -11,8 +11,13 @@ title: Search
     T<span class="small">opology</span>
     List
 </h1>
-<form action="/index.html" method="get">
+<form id="search-form" action="" method="get">
   <input type="text" id="search-box" name="query" placeholder="🔎 Search">
+  <p class="pill_bar small_text hint" id="search-hint">
+      Hint: Press enter to add the current search term as a tag filter.
+  </p>
+  <p class="pill_bar small_text hidden" id="filter-tags">
+  </p>
 </form>
 <table >
     <thead>
@@ -27,7 +32,8 @@ title: Search
         {% assign tag_list = software.tags | sort %}
         {% for tag in tag_list %}
             {%- assign tag_main = tag | split:"/" | first -%}
-            <span class="TAG_{{ tag_main}} pill">#{{ tag  }}</span>
+            <span class="TAG_{{ tag_main}} pill"
+                  onclick="javascript:addTag('{{ tag }}')">{{ tag  }}</span>
         {% endfor %}
         </td>
     </tr>

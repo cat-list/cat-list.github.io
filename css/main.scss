@@ -18,6 +18,14 @@ $first-split: 400px;
 form {
     width: 100%;
     padding: 10px 0;
+    text-align: center;
+
+    p {
+        margin-top: 10px;
+        &.hint {
+            color: $weak-color;
+        }
+    }
 }
 
 input[type="text"] {
@@ -87,7 +95,7 @@ a {
 
 table {
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 10px 0;
     width: 100%;
 
     th {
@@ -237,4 +245,8 @@ p.no_content {
 
 .content p:not(:first-child){
     margin-top: 20px;
+}
+
+p.hidden {
+    display: none;
 }
