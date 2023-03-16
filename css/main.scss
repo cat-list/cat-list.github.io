@@ -2,7 +2,7 @@
 ---
 
 $background: #FEF7FA;
-$accent: #550d2b;
+$accent: black;
 $hover: rgba(33, 5, 17, 0.2);
 $weak-color: rgba(33, 5, 17, 0.5);
 $first-split: 400px;
@@ -185,15 +185,15 @@ span.pill {
     }
 
     &.TAG_custom {
-        background-color: crimson;
+        background-color: gainsboro;
     }
 
     &.TAG_dist {
-        background-color: darkorchid;
+        background-color: dodgerblue;
     }
 
     &.TAG_lang {
-        background-color: darkkhaki
+        background-color: goldenrod;
     }
 
     &.TAG_type {
