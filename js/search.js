@@ -127,6 +127,4 @@ function SETUP() {
   ]);
 }
 
-SETUP().then(() => {
-  UPDATE();
-});
+SETUP().then(UPDATE);
