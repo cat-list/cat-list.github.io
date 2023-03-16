@@ -34,7 +34,7 @@ const UPDATE = (function () {
     } else {
       search_hint.classList.add('hidden');
       filter_tags.innerHTML = '';
-      STATE.filter_tags.forEach((f_tag) => {
+      STATE.filter_tags.forEach(function (f_tag) {
         let elem = document.createElement('span');
         let main_tag = f_tag.split('/')[0];
         elem.classList.add('TAG_' + main_tag);
@@ -44,16 +44,15 @@ const UPDATE = (function () {
         delete_elem.classList.add('pill_button');
         elem.innerHTML = f_tag + ' ';
         elem.appendChild(delete_elem);
-        elem.onclick = (e) => {
-          console.log(STATE.filter_tags);
+        elem.onclick = (e1) => {
           const index = STATE.filter_tags.indexOf(f_tag);
-          console.log(index);
           if (index > -1) {
             STATE.filter_tags.splice(f_tag, 1);
             UPDATE();
           }
         };
         filter_tags.appendChild(elem);
+        filter_tags.appendChild(document.createTextNode(' '));
       });
       filter_tags.classList.remove('hidden');
     }
@@ -70,7 +69,7 @@ const UPDATE = (function () {
     var idxs;
     if (STATE.query == '') {
       // Use default order on empty search
-      idxs = STATE.data.map((elem, idx) => idx);
+      idxs = STATE.data.map((_elem, idx) => idx);
     } else {
       idxs = STATE.fuse.search(STATE.query).map((res) => res.refIndex);
     }
@@ -91,9 +90,19 @@ const UPDATE = (function () {
   };
 })();
 
-function addTag(new_tag) {
-  STATE.filter_tags.push(new_tag);
-  UPDATE();
+function addTag(tag_name, update) {
+  if (!STATE.tags.includes(tag_name)) {
+    ret_val = false;
+  } else {
+    ret_val = true;
+  }
+  if (ret_val && !STATE.filter_tags.includes(tag_name)) {
+    STATE.filter_tags.push(tag_name);
+  }
+  if (update) {
+    UPDATE();
+  }
+  return ret_val;
 }
 
 function SETUP() {
@@ -144,25 +153,13 @@ function SETUP() {
   }
 
   function attachSearchCallback() {
-    function addTag(tag_name) {
-      if (!STATE.tags.includes(tag_name)) {
-        return false;
-      }
-      if (!STATE.filter_tags.includes(tag_name)) {
-        STATE.filter_tags.push(tag_name);
-        return true;
-      } else {
-        return false;
-      }
-    }
-
-    document.getElementById('search-box').oninput = (e) => {
-      STATE.query = e.target.value;
+    document.getElementById('search-box').oninput = (e2) => {
+      STATE.query = e2.target.value;
       UPDATE();
     };
-    document.getElementById('search-form').onsubmit = (e) => {
-      e.preventDefault();
-      if (addTag(STATE.query)) {
+    document.getElementById('search-form').onsubmit = (e3) => {
+      e3.preventDefault();
+      if (addTag(STATE.query, false)) {
         document.getElementById('search-box').value = '';
         STATE.query = '';
         UPDATE();

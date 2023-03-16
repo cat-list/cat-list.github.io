@@ -20,8 +20,12 @@ form {
     padding: 10px 0;
     text-align: center;
 
+}
+
+.filter_row{
+    text-align: center;
     p {
-        margin-top: 10px;
+        white-space: pre-wrap;
         &.hint {
             color: $weak-color;
         }
@@ -116,7 +120,7 @@ table {
         line-height: 28px;
     }
 
-    tbody {
+    tbody.highlight-hover {
         tr:hover {
             background-color: $hover;
         }
@@ -168,8 +172,8 @@ span.pill {
     background-color: $hover;
     padding: 3px 7px;
     border-radius: 10px;
-    white-space: nowrap;
     margin: 0 2px;
+    white-space: nowrap;
 
     a {
         color: inherit;
@@ -265,6 +269,6 @@ p.no_content {
     margin-top: 20px;
 }
 
-p.hidden {
+.hidden {
     display: none;
 }
