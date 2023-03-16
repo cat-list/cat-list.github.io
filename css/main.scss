@@ -161,6 +161,38 @@ span.pill {
     padding: 3px 7px;
     border-radius: 10px;
     white-space: nowrap;
+
+    &.TAG_complex {
+        background-color: blanchedalmond;
+    }
+
+    &.TAG_custom {
+        background-color: crimson;
+    }
+
+    &.TAG_dist {
+        background-color: darkorchid;
+    }
+
+    &.TAG_lang {
+        background-color: darkkhaki
+    }
+
+    &.TAG_type {
+        background-color: deeppink;
+    }
+
+    &.TAG_vis {
+        background-color: chocolate;
+    }
+
+    &.TAG_feat {
+        background-color: aquamarine;
+    }
+
+    &.TAG_repr {
+        background-color: coral;
+    }
 }
 
 span.large_pill{

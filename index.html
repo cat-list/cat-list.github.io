@@ -26,7 +26,8 @@ title: Search
         <td class="software_tags">
         {% assign tag_list = software.tags | sort %}
         {% for tag in tag_list %}
-            <span class="pill">#{{ tag  }}</span>
+            {%- assign tag_main = tag | split:"/" | first -%}
+            <span class="TAG_{{ tag_main}} pill">#{{ tag  }}</span>
         {% endfor %}
         </td>
     </tr>

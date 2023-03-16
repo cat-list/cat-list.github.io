@@ -26,6 +26,7 @@ layout: default
 <p class="pill_bar small_text">
     {% assign tag_list = page.tags | sort %}
     {% for tag in tag_list %}
-    <span class="pill">#{{ tag  }}</span>
+        {%- assign tag_main = tag | split:"/" | first -%}
+        <span class="TAG_{{ tag_main }} pill">#{{ tag  }}</span>
     {% endfor %}
 </p>
