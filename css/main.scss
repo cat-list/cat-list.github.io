@@ -210,13 +210,15 @@ span.pill {
 
     button{
         font-size: 0.8em;
-        background: none;
-        color: inherit;
-        border: none;
-        padding: 0;
-        cursor: pointer;
-        outline: inherit;
     }
+}
+button{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
 }
 
 span.large_pill{
