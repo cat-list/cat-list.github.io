@@ -285,6 +285,10 @@ p.no_content {
     padding: 30px 10px;
 }
 
+.content {
+    line-height: 1.3em;
+}
+
 .content p:not(:first-child){
     margin-top: 20px;
 }
