@@ -7,7 +7,7 @@ $hover: rgba(0, 0, 0, 0.1);
 $weak-color: rgba(0, 0, 0, 0.2);
 $hint-color: rgba(0, 0, 0, 0.5);
 $mid-color: rgba(0, 0, 0, 1);
-$first-split: 400px;
+$first-split: 450px;
 
 * { 
     margin: 0; 
@@ -292,3 +292,13 @@ p.no_content {
 .hidden {
     display: none;
 }
+
+p.please_contribute{
+    text-align: center;
+    color: $hint-color;
+    padding-bottom: 15px;
+    @media only screen and (max-width: $first-split) {
+        font-size: 0.9em;;
+    }
+}
+
