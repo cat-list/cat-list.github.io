@@ -1,6 +1,6 @@
 ---
 name: "pysistence-landscapes"
-title: Pysistence Langscapes
+title: Pysistence Landscapes
 tags:
   - lang/python
   - repr/landscape
