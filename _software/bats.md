@@ -5,6 +5,7 @@ tags:
   - lang/c++
   - lang/python
   - type/persistence
+  - type/vineyard
   - type/representative
   - complex/simplicial
   - complex/cubical
@@ -38,4 +39,5 @@ Highlighted functionality from the docs include:
 
 Notably, constructions such as filtrations and chain complexes are generic over relevant parameters such as field coefficients and complex type.
 Moreover, OpenMP is used for parallelism.
-Python bindings are also provided 
+Python bindings are also provided which cover most use cases.
+Vineyards are implemented but not documented in great detail.
