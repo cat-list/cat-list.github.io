@@ -5,6 +5,7 @@ tags:
   - lang/c++
   - lang/python
   - type/persistence
+  - type/clustering
   - complex/cubical
   - complex/simplicial
   - complex/alpha

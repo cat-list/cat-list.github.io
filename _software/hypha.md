@@ -1,14 +1,13 @@
 ---
-name: ripser++
-title: Ripser++
+name: hypha
+title: HYPHA
 tags:
   - lang/c++
   - lang/cuda
-  - lang/python
   - type/persistence
   - type/gpu
-  - complex/rips
-  - custom/distance
+  - type/parallel
+  - custom/boundary-matrix
 links:
   - name: Repository
     url: https://github.com/simonzhang00/ripser-plusplus
