@@ -10,5 +10,5 @@ tags:
   - custom/boundary-matrix
 links:
   - name: Repository
-    url: https://github.com/simonzhang00/ripser-plusplus
+    url: https://github.com/simonzhang00/hypha
 ---
