@@ -13,6 +13,8 @@ links:
     url: https://github.com/tomchaplin/lophat
   - name: Rust Docs
     url: https://docs.rs/lophat/latest/lophat/
+  - name: Python Docs
+    url: https://lophat.readthedocs.io/en/latest/
 ---
 LoPHAT is a Rust library implementing the lockfree algorithm for computing persistent homology (PH), introduced by Morozov and Nigmetov.
 Python bindings are provided via PyO3, with an interface familiar to those who have used [PHAT](/software/phat.html).
