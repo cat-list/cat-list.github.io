@@ -37,6 +37,7 @@
     "type/discrete-morse-theory",
     "type/gpu",
     "type/images",
+    "type/mapper",
     "type/parallel",
     "type/persistence",
     "type/representative",
