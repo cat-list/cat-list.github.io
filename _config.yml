@@ -52,7 +52,7 @@ github_username:  cat-list
 #   - vendor/gems/
 #   - vendor/ruby/
 exclude:
-  - scripts/
+  - metadata/
 
 collections:
   software:
