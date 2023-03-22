@@ -1,6 +1,6 @@
 ---
 name: tda-r
-title: TDA: Statistical Tools for Topological Data Analysis
+title: TDA
 tags:
   - lang/R
   - type/persistence
