@@ -28,6 +28,7 @@ lang/julia
 lang/matlab
 lang/python
 lang/rust
+repr/atol
 repr/image
 repr/kernel
 repr/landscape
