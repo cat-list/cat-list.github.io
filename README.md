@@ -9,5 +9,5 @@ https://cat-list.github.io/
 We strongly encourage any additions, updates or corrections to the CAT list.
 
 * Please submit your changes as a pull request.
-* Try to use [tags that have already been defined](metadata/all-tags.json).
-* Note that upon submitting a pull request, a github action will automatically commit a recompiled [`metadata/all-tags.json`](metadata/all-tags.json).
+* Try to use [tags that have already been defined](metadata/all-tags.txt).
+* Note that upon submitting a pull request, a github action will automatically commit a recompiled [`metadata/all-tags.txt`](metadata/all-tags.txt).
