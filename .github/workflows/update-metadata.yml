@@ -1,0 +1,28 @@
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  add-metadata:
+    name: Update metadata all-tags
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
+
+    - name: Build
+      uses: actions/jekyll-build-pages@v1.0.7
+
+    - name: Add metadata
+      run: |
+        mkdir -p ./metadata
+        python -m json.tool ./_site/json/software-tags.json > ./metadata/all-tags.json
+
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Update all-tags metadata
