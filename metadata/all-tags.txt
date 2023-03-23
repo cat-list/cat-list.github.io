@@ -1,6 +1,7 @@
 complex/alpha
 complex/cech
 complex/cell
+complex/cluster-tree
 complex/cover-mapper
 complex/cubical
 complex/digraph
@@ -15,10 +16,13 @@ custom/boundary-matrix
 custom/distance
 custom/filtration
 dist/bottleneck
+dist/dtm
+dist/hausdorff
 dist/wasserstein
 feat/amplitude
 feat/entropy
 feat/polynomial
+lang/R
 lang/c++
 lang/cli
 lang/cuda
@@ -33,6 +37,7 @@ repr/image
 repr/kernel
 repr/landscape
 repr/silhouette
+stats/bootstrap
 type/clustering
 type/discrete-morse-theory
 type/gpu
@@ -44,5 +49,6 @@ type/representative
 type/vineyard
 vis/barcode
 vis/betti-surface
+vis/cluster-tree
 vis/density
 vis/diagram
