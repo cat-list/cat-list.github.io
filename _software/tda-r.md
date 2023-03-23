@@ -19,7 +19,7 @@ tags:
   - vis/cluster-tree
 links:
   - name: CRAN
-	url: https://cran.r-project.org/web/packages/TDA/
+    url: https://cran.r-project.org/web/packages/TDA/
 ---
 
 TDA provides an R interface to GUDHI, Dionysus, and PHAT as well as implementing methods for analysing statistics of persistence diagrams.
