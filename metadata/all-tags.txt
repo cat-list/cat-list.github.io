@@ -40,6 +40,7 @@ repr/silhouette
 stats/bootstrap
 type/clustering
 type/discrete-morse-theory
+type/distributed
 type/gpu
 type/images
 type/mapper
@@ -47,6 +48,7 @@ type/parallel
 type/persistence
 type/representative
 type/vineyard
+type/zigzag
 vis/barcode
 vis/betti-surface
 vis/cluster-tree
