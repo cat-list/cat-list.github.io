@@ -6,5 +6,5 @@ tags:
   - type/parallel
 links:
   - name: Repository
-  - url: https://github.com/erikvonb/futhark-ph
+    url: https://github.com/erikvonb/futhark-ph
 ---
