@@ -15,5 +15,5 @@ links:
 ---
 
 PHAT is a persistent homology library for computation of persistence pairs
-of a filtered cell complex over $Z_2$. 
+of a filtered cell complex over Z<sub>2</sub>. 
 PHAT consumes an ordered boundary matrix and can be used as a compiled executable or as a C++ library.
