@@ -21,3 +21,16 @@ links:
     url: https://live.ripser.org/
 
 ---
+
+Ripser is a persistent homology package for computation of Vietoris-Rips persistence barcodes.
+Ripser takes in either
+
+- distances matrices (full, lower, or upper) as a CSV
+- sparse distances matrices in sparse triplet format
+- distance matrices as a binary file (DIPHA or lower triangular)
+- point cloud data.
+
+Ripser can also compute representative cocyles for persistent homology.
+
+Ripser also has a Python version, Ripser.py, that also provides visualisation of persistence diagrams
+and computing lower-star filtrations on images.
