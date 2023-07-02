@@ -4,6 +4,7 @@ complex/cell
 complex/cluster-tree
 complex/cover-mapper
 complex/cubical
+complex/cw
 complex/digraph
 complex/flag
 complex/grid
