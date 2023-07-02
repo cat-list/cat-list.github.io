@@ -14,3 +14,6 @@ links:
   - name: Repository
     url: https://github.com/anigmetov/oineus
 ---
+
+Oineus is a persistent homology package for shared-memory parallel computation of persistent homology
+on lower-star filtration on regular grids or user-defined filtrations on simplicial complexes.
