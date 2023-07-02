@@ -12,3 +12,6 @@ links:
   - name: Repository
     url: https://github.com/simonzhang00/hypha
 ---
+
+HYPHA is a persistent homology package for parallel persistent homology matrix reduction
+with GPUs.
