@@ -37,3 +37,4 @@ links:
 
 DESCRIPTION OF SOFTWARE
 ```
+Make sure to use spaces and not tabs in the file, otherwise it will break.
