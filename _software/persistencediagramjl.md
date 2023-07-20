@@ -11,9 +11,9 @@ tags:
   - dist/wasserstein
 links:
   - name: Docs
-	url: https://mtsch.github.io/PersistenceDiagrams.jl/dev/
+    url: https://mtsch.github.io/PersistenceDiagrams.jl/dev/
   - name: Repo
-	url: https://github.com/mtsch/PersistenceDiagrams.jl
+    url: https://github.com/mtsch/PersistenceDiagrams.jl
 ---
 
 PersistenceDiagram.jl provides plotting and distance utilities for persistence diagrams in Julia.
