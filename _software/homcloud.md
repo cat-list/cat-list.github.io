@@ -28,7 +28,7 @@ The package also provides a range of histogram-based vectorisation methods,
 including persistence images and diagram binning.
 These methods are tightly coupled with the Python machine-learning ecosystem, including scikit-learn.
 
-The package also includes many inverse methods inclduing
+Utilities for a variety of inverse methods are provided, including
 * optimal volumes
 * stable volumes
 * optimal 1-cycles
