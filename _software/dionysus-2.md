@@ -10,6 +10,7 @@ tags:
   - complex/rips
   - dist/wasserstein
   - dist/bottleneck
+  - type/omnifield
   - type/zigzag
   - vis/diagram
 links:
