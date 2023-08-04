@@ -45,6 +45,7 @@ type/distributed
 type/gpu
 type/images
 type/mapper
+type/omnifield
 type/parallel
 type/persistence
 type/representative
