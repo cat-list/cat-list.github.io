@@ -1,6 +1,6 @@
 ---
-name: Hades
-title: HADES Fast Singularity Detection with Kernel
+name: hades
+title: "HADES: Fast Singularity Detection with Kernel"
 tags:
   - lang/python
   - type/singularity-detection
