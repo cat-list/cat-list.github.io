@@ -49,6 +49,7 @@ type/omnifield
 type/parallel
 type/persistence
 type/representative
+type/singularity-detection
 type/vineyard
 type/zigzag
 vis/barcode
