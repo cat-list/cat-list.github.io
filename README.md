@@ -12,7 +12,7 @@ https://cat-list.github.io/
 
 We strongly encourage any additions, updates or corrections to the CAT list.
 
-* Please submit your changes as a pull request.
+* Preferably submit your changes as a [pull request](https://github.com/cat-list/cat-list.github.io/pulls), otherwise open an [issue](https://github.com/cat-list/cat-list.github.io/issues).
 * Try to use [tags that have already been defined](metadata/all-tags.txt).
 * Note that upon submitting a pull request, a github action will automatically commit a recompiled [`metadata/all-tags.txt`](metadata/all-tags.txt).
 
