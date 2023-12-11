@@ -38,3 +38,7 @@ links:
 DESCRIPTION OF SOFTWARE
 ```
 Make sure to use spaces and not tabs in the file, otherwise it will break.
+
+## Running the website locally
+
+If you wish to run the website locally, first install Ruby and [Bundler](https://bundler.io/) then install the required packages with `bundle install` and finally run the website with `bundle exec jekyll serve`.
