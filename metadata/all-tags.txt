@@ -40,6 +40,7 @@ repr/landscape
 repr/silhouette
 stats/bootstrap
 type/clustering
+type/dimensionality-reduction
 type/discrete-morse-theory
 type/distributed
 type/gpu
