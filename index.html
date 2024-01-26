@@ -24,7 +24,7 @@ title: Search
 </td></table>
 </div>
 
-<div class="all_tags">
+<div id="all_tags" class="all_tags short_view">
   All tags:
   <br>
 {% capture tags_content %}{% include_relative metadata/all-tags.txt %}{% endcapture %}
@@ -36,6 +36,9 @@ title: Search
 <span class="TAG_{{ tag_main}} pill">{{ stripped_tag }}&nbsp;<button onclick="addTag('{{ stripped_tag }}', true)" class="add-button">➕</button></span>
 {% endif %}
 {% endfor %}
+</div>
+<div class="centered">
+  <button id="show_more_toggle" class="show_more_toggle">↓ Show more ↓</button>
 </div>
 
 
