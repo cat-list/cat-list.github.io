@@ -171,6 +171,22 @@ function SETUP() {
     document.getElementById('search-box').focus();
   }
 
+  function attachShowMoreListener() {
+    const button = document.getElementById("show_more_toggle")
+    const all_tags = document.getElementById("all_tags")
+    button.onclick = (e) => {
+      e.preventDefault();
+      const is_short_view = all_tags.classList.contains("short_view")
+      if (is_short_view) {
+        all_tags.classList.remove("short_view")
+        button.textContent = "↑ Show less ↑"
+      } else {
+        all_tags.classList.add("short_view")
+        button.textContent = "↓ Show more ↓"
+      }
+    }
+  }
+  
   return Promise.all([
     setInitialQuery(),
     buildShadow(),
@@ -178,6 +194,7 @@ function SETUP() {
     getTags(),
     focusSearchBox(),
     attachSearchCallback(),
+    attachShowMoreListener()
   ]);
 }
 

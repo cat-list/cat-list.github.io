@@ -37,6 +37,28 @@ form {
     }
 }
 
+.all_tags{
+    padding-top: 10px;
+    line-height: 28px;
+    text-align: center;
+    overflow: scroll;
+
+    &.short_view {
+        max-height: 125px;        
+    }
+}
+
+.centered {
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+button.show_more_toggle {
+    color: blue;
+    
+}
+
 input[type="text"] {
     outline: none;
     border: none;

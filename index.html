@@ -19,9 +19,29 @@ title: Search
   Hint: Press enter to add the current search term as a tag filter.
 </p>
 <table>
+  Chosen tags:
 <td class="software_tags hidden" id="filter-tags">
 </td></table>
 </div>
+
+<div id="all_tags" class="all_tags short_view">
+  All tags:
+  <br>
+{% capture tags_content %}{% include_relative metadata/all-tags.txt %}{% endcapture %}
+  {% assign tags = tags_content | newline_to_br | split: '<br />' %}
+  {% for tag in tags %}
+{%- assign stripped_tag = tag | strip_newlines -%}
+{% if stripped_tag != "" %}
+  {%- assign tag_main = stripped_tag | split:"/" | first -%}
+<span class="TAG_{{ tag_main}} pill">{{ stripped_tag }}&nbsp;<button onclick="addTag('{{ stripped_tag }}', true)" class="add-button">➕</button></span>
+{% endif %}
+{% endfor %}
+</div>
+<div class="centered">
+  <button id="show_more_toggle" class="show_more_toggle">↓ Show more ↓</button>
+</div>
+
+
 <table>
     <thead>
         <th>Software</th>
