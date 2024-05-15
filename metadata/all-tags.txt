@@ -37,6 +37,8 @@ repr/atol
 repr/image
 repr/kernel
 repr/landscape
+repr/mma
+repr/signed-barcode
 repr/silhouette
 stats/bootstrap
 type/clustering
@@ -46,6 +48,7 @@ type/distributed
 type/gpu
 type/images
 type/mapper
+type/multiparameter
 type/omnifield
 type/parallel
 type/persistence
