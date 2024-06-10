@@ -46,6 +46,7 @@ type/clustering
 type/dimensionality-reduction
 type/discrete-morse-theory
 type/distributed
+type/euler-char-transform
 type/gpu
 type/images
 type/mapper
