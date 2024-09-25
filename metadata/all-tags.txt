@@ -1,6 +1,7 @@
 complex/alpha
 complex/cech
 complex/cell
+complex/chromatic-alpha
 complex/cluster-tree
 complex/cover-mapper
 complex/cubical
@@ -46,6 +47,7 @@ repr/silhouette
 repr/templatefunctions
 stats/bootstrap
 type/Reeb
+type/chromatic
 type/clustering
 type/dimensionality-reduction
 type/discrete-morse-theory
