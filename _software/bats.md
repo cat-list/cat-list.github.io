@@ -7,6 +7,8 @@ tags:
   - type/persistence
   - type/vineyard
   - type/representative
+  - type/zigzag
+  - type/relative-homology
   - complex/simplicial
   - complex/cubical
   - complex/cell
