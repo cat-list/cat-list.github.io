@@ -61,6 +61,7 @@ type/multiparameter
 type/omnifield
 type/parallel
 type/persistence
+type/relative-homology
 type/representative
 type/singularity-detection
 type/vineyard
