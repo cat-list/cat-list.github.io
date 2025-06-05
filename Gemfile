@@ -37,3 +37,7 @@ gem "webrick", "~> 1.7"
 gem 'google-protobuf', '~> 4.26'
 
 gem 'json'
+
+gem 'csv'
+gem 'logger'
+gem "base64"
