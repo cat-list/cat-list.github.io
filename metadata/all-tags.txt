@@ -8,6 +8,7 @@ complex/cubical
 complex/cw
 complex/delay-coordinate
 complex/digraph
+complex/dowker
 complex/flag
 complex/grid
 complex/magnitude
@@ -49,6 +50,7 @@ stats/bootstrap
 type/Reeb
 type/chromatic
 type/clustering
+type/cycle-optimization
 type/dimensionality-reduction
 type/discrete-morse-theory
 type/distributed
@@ -56,6 +58,7 @@ type/euler-char-transform
 type/gpu
 type/images
 type/mapper
+type/matrix-factorization
 type/mergetree
 type/multiparameter
 type/omnifield
@@ -71,3 +74,4 @@ vis/betti-surface
 vis/cluster-tree
 vis/density
 vis/diagram
+vis/representative
