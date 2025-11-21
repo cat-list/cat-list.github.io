@@ -20,6 +20,10 @@ tags:
 links:
   - name: Homepage
     url: http://openappliedtopology.github.io/
+  - name: Python Docs
+    url: https://oat-python.readthedocs.io/en/latest/
+  - name: Rust Docs
+    url: https://docs.rs/oat_rust/latest/oat_rust/
 ---
 
 Open Applied Topology (OAT) is a software package for begginers through advanced
