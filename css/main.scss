@@ -24,6 +24,13 @@ form {
 
 }
 
+p.subtitle {
+    text-align: center;
+    color: $hint-color;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
 .filter_row{
     text-align: center;
     p {

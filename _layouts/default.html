@@ -14,7 +14,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
     <!-- Analytics -->
     <script async src="https://umami.tomchaplin.xyz/script.js" data-website-id="8ce68729-cda3-47db-a008-ad2b02601779"></script>
-    <title>{{ page.title }} @ The CAT List</title>
+    <!-- SEO -->
+    {%- if page.head_title -%}
+      {%- assign head_title = page.head_title -%}
+    {%- elsif page.collection == "software" -%}
+      {%- capture head_title -%}{{ page.title }} – {{ site.tagline }} @ {{ site.title }}{%- endcapture -%}
+    {%- elsif page.title -%}
+      {%- capture head_title -%}{{ page.title }} @ {{ site.title }} – {{ site.tagline }}{%- endcapture -%}
+    {%- else -%}
+      {%- capture head_title -%}{{ site.title }} – {{ site.tagline }}{%- endcapture -%}
+    {%- endif -%}
+    {%- assign head_description = site.description | normalize_whitespace -%}
+    {%- if page.collection == "software" -%}
+      {%- assign entry_text = page.content | markdownify | strip_html | normalize_whitespace | strip -%}
+      {%- if entry_text != "" -%}
+        {%- assign head_description = entry_text -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if head_description.size > 160 -%}
+      {%- assign words = head_description | truncate: 158, "" | split: " " | pop | join: " " -%}
+      {%- assign head_description = words | append: "…" -%}
+    {%- endif %}
+    <title>{{ head_title | normalize_whitespace | xml_escape }}</title>
+    <meta name="description" content="{{ head_description | xml_escape }}">
+    {%- if page.sitemap != false %}
+    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+    {%- endif %}
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.title }} – {{ site.tagline }}">
+    <meta property="og:title" content="{{ head_title | normalize_whitespace | xml_escape }}">
+    <meta property="og:description" content="{{ head_description | xml_escape }}">
+    <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | absolute_url }}">
   </head>
   <body>
       <div class="pin_max_width">
