@@ -10,6 +10,7 @@ complex/delay-coordinate
 complex/digraph
 complex/dowker
 complex/flag
+complex/formigram
 complex/grid
 complex/magnitude
 complex/ordinal-partition-network
@@ -67,6 +68,7 @@ type/persistence
 type/relative-homology
 type/representative
 type/singularity-detection
+type/video
 type/vineyard
 type/zigzag
 vis/barcode
